@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Voice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            blackBoard: "rgba(0, 0, 0, 0.7)",
+            whiteBoard: "whitesmoke",
+            whiteSmoke: "whitesmoke"
+          }
+        }
+      }
+    }
+  </script>
+<style>
+  body.dark-mode {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #333;
+  }
+ 
+</style>
+</head>
+<body class="bg-white text-slate-400" data-page="amerika">
+  <div class="absolute top-[25px] left-1/2 transform -translate-x-1/2 rounded-lg bg-blackBoard leading-[3] font-medium w-[50%] h-[50px]">
+  <div class="relative">
+       <nav class="flex justify-around ml-[5px]">
+        <ul class="flex gap-[50px]">
+          <li><a href="index.html" id="home_pages" class="text-white text-[13px] hover:text-emerald-400">HOME</a></li>
+          <li><a href="politics.html" id="politics_pages" class="text-white text-[13px] hover:text-emerald-400">POLITICS</a></li>
+          <li><a href="sport.html" id="sport_pages" class="text-white text-[13px] hover:text-emerald-400">SPORT</a></li>
+          <li><a href="vehicle.html" id="vehicle_pages" class="text-white text-[13px] hover:text-emerald-400">VEHICLE</a></li>
+          <li class="flex items-center group"><a href="#" id="board_pages" class="text-white text-[13px] hover:text-emerald-400">BOARD</a><i class='bx bxs-down-arrow text-white ml-[7px] text-[13px]'></i>
+            <div class="absolute top-[100%] w-[50%] left-[50%] h-[250px] bg-whiteBoard border-2 border-slate-300 rounded mt-[2px] hidden group-hover:block">
+              <div class="flex justify-around items-center gap-[10px] mt-[25px]">
+                <ul class="w-[100px] h-[177px] ml-[50px] leading-[3]" id="imageList">
+                 <li><a href="cosmos.html" data-image="chine-cosmos.jpg" class="block h-[44px] font-bold hover:text-emerald-500" id="cosmos_pages">Cosmos</a></li>
+                 <li><a href="robotics.html" data-image="photo-robo.webp" class="block h-[44px] font-bold hover:text-emerald-500" id="robotics_pages">Robotics</a></li>
+                 <li><a href="health.html" data-image="swimmer.jpg" class="block h-[44px] font-bold hover:text-emerald-500" id="health_pages">Health</a></li>
+                 <li><a href="motogp.html" data-image="mito.jpg" class="block h-[44px] font-bold hover:text-emerald-500" id="motogp_pages">Moto GP</a></li>
+                </ul>
+                <img src="chine-cosmos.jpg" id="dynamicPhoto" alt="" class="w-[400px] h-[177px] mr-[25px]"/>
+                </div>
+            </div>
+          </li>
+        </ul>
+
+         <div class="text-[12px] mt-[8px] mb-[8px] font-medium flex justify-between items-center gap-[50px]">
+        <select id="languageSelector" class="languageSelections border-2 border-gray-300 rounded">
+          <option value="en" id="activeLangues">EN</option>
+          <option value="az" id="activeLangues">AZ</option>
+          <option value="uk" id="activeLangues">UK</option>
+        </select>
+        <div class="relative w-[25px] h-[25px] text-slate-50 text-xl mt-[5px] cursor-pointer">
+          <i class='bx bxs-sun absolute sunlight'></i>
+          <i class='bx bx-moon absolute hidden moonlight'></i>
+         </div>
+        </div>
+        </nav>
+  </div>
+  </div>
+       
+  <div class="absolute top-[350px] left-[200px] w-[1600px] h-[500px]">
+    <h2 class="ml-[250px] mt-[25px] text-slate-500 text-2xl" id="heading_trump">Trump details sweeping changes he’ll carry out on day one and beyond in an exclusive interview</h2>
+    <img src="trump.webp" alt="Korean Protests" class="ml-[250px] mt-[25px] w-[1000px] h-[350px]"/>
+    <p class="ml-[250px] mt-[50px] w-[1000px] text-blue-500 text-sm" id="paragraph_trump">
+      President-elect Donald Trump vowed to make immediate and sweeping changes after he takes office on Jan. 20, such as pardons for those convicted in the attack on the U.S.
+      Capitol, and said he wants to find a legislative solution to keep Dreamers in the country legally.
+      In an interview with Kristen Welker, moderator of NBC News’ Meet the Press, Trump also said he’ll work to extend the tax cuts passed in his first term.
+      He said he will not seek to impose restrictions on abortion pills. He plans to deport millions of undocumented immigrants and try to end birthright citizenship.
+      And he said the pardons for Jan. 6 rioters will happen on day one, arguing many have endured overly harsh treatment in prison.
+      'These people are living in hell,' he said.
+    </p>
+   </div>
+          
+  <script src="app.js"></script>
+</body>
+</html>
